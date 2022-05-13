@@ -1,10 +1,7 @@
-
-
 import React from "react";
-import { Bar, Chart } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 import 'chart.js/auto'
-import { getRelativePosition } from 'chart.js/helpers';
-import { type } from "@testing-library/user-event/dist/type";
+
 
 const BarChart =() => {
     return <div>
