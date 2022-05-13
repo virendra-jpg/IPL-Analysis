@@ -2,47 +2,31 @@ import React, { useState } from "react";
 import jsonData from "../matches.json"
 
 const Tsg = ({year}) => {
-    // const [data, setData] = useState([jsonData.find((d) => d.season == year)])
-    // const data = jsonData.find((d) => d.season == year)
-    // console.log(data);
     return (
         
     
 
-        <div>
+        <div style={colo} >
             
             
             {jsonData.map((user)=>{
              if(user.season == year) {
                 return (
 
-                    <div className="card mb-3">
-                        <h2 className="card-header">{user.team1} vs {user.team2}</h2>
-                        <div className="card-body">
+                    <div key={user.id} style={{border:"1px solid green"}} className="card mb-3">
+                        <h2 style={{backgroundColor:"#fff"}} className="card-header">{user.team1} vs {user.team2}</h2>
+                        <div  className="card-body">
                             <p> {user.toss_winner} won the toss and opt to {user.toss_decision} .</p>
+                            <hr style={{backgroundColor : "green", marginLeft:"25%", width:"50%", height:"0.5px", margin:"auto,auto"}} />
+                            <p> <span className="text-success"> {user.winner} </span> won by {user.win_by_wickets} wickets or won by {user.win_by_runs}  runs and Man of the match was {user.player_of_match}.</p>
                             <br />
-                            <p> <span className="text-info"> {user.winner} </span> won by {user.win_by_wickets} wickets or {user.win_by_runs} by runs.</p>
-                            <br />
-                            <p>umpires were {user.umpire1} and {user.umpire2}.</p>
+                            <p>Umpires were {user.umpire1} and {user.umpire2}.</p>
                             
                         </div>
-                        <div className="card-footer"> <p>played at {user.venue} in {user.city} city.</p></div>
+                        <div style={{backgroundColor : "lightgreen"}} className="card-footer"> <p>played at {user.venue} in {user.city} city.</p></div>
                     </div>
 
-                    // <div style={solo}>
-                    //     <p>{user.city}</p>
-                    //     <p>{user.team1}</p>
-                    //     <p>{user.team2}</p>
-                    //     <p>{user.venue}</p>
-                    //     <p>{user.winner}</p>
-                    //     <p>{user.toss_winner}</p>
-                    //     <p>{user.toss_decision}</p>
-                    //     <p>{user.date}</p>
-                    //     <p>{user.win_by_runs}</p>
-                    //     <p>{user.win_by_wickets}</p>
-                    //     <p>{user.umpire1}</p>
-                    //     <p>{user.umpire2}</p>
-                    // </div>                    
+                                      
                 );
             }})}
 
@@ -50,8 +34,12 @@ const Tsg = ({year}) => {
         </div>
 
 
-        );
-    };
+    );
+};
+ const colo ={
+    textAlign : "center"
+ };
+
 
       
     export default Tsg;
