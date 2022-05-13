@@ -1,15 +1,19 @@
 import logo from './logo.svg';
 import React from 'react';
-import Tte from './components/Tte';
+
 import './App.css';
 import {} from 'react-chartjs-2'
 import Tsg from './components/Tsg';
-
 import BarChart from './components/BarChart';
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
+    <div  className="App">
       <header className="App-header">
     
       <div className="row">
@@ -21,7 +25,7 @@ function App() {
       role="tablist"
       aria-orientation="vertical"
     >
-      <a
+      <a 
         className="nav-link active"
         id="v-tabs-home-tab"
         data-mdb-toggle="tab"
@@ -29,8 +33,7 @@ function App() {
         role="tab"
         aria-controls="v-tabs-home"
         aria-selected="true"
-        >Home</a
-      >
+        >Home</a>
       <a
         className="nav-link"
         id="season-tab-8"
@@ -145,8 +148,16 @@ function App() {
         id="v-tabs-home"
         role="tabpanel"
         aria-labelledby="v-tabs-home-tab"
+        style={{textAlign:"center"}}
       >
         <h1 style={solo}>Analyse IPL Season By Season</h1>
+        
+        <h2>Chart of toss wins and Match wins</h2>
+         
+        <BarChart />
+        
+
+
       </div>
       <div
         className="tab-pane fade"
@@ -259,6 +270,8 @@ const colo = {
 const solo = {
   fontWeight:"bold",
   textAlign : "center",
-  padding : "5px"
+  padding : "5px",
+  border: "1px solid black",
+  backgroundColor : "lightgrey"
 };
 export default App;
