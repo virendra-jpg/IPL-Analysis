@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import React from 'react';
 
-import './App.css';
+
 import {} from 'react-chartjs-2'
 import Tsg from './components/Tsg';
 import BarChart from './components/BarChart';
