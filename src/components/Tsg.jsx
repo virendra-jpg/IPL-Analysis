@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import jsonData from "../matches.json"
 
 const Tsg = ({year}) => {
@@ -10,7 +10,8 @@ const Tsg = ({year}) => {
             
             
             {jsonData.map((user)=>{
-             if(user.season == year) {
+            
+             if(user.season === year) {
                 return (
 
                     <div key={user.id} style={{border:"1px solid green"}} className="card mb-3">
@@ -23,7 +24,7 @@ const Tsg = ({year}) => {
                             <p>Umpires were {user.umpire1} and {user.umpire2}.</p>
                             
                         </div>
-                        <div style={{backgroundColor : "lightgreen"}} className="card-footer"> <p>played at {user.venue} in {user.city} city.</p></div>
+                        <div style={{backgroundColor : "lightgreen"}} className="card-footer"> <p>played at {user.venue} in {user.city} city on date {user.date}.</p></div>
                     </div>
 
                                       
