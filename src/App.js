@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import React from 'react';
 
 
@@ -153,6 +153,7 @@ function App() {
         <h1 style={solo}>Analyse IPL Season By Season</h1>
         
         <h2>Chart of toss wins and Match wins</h2>
+        <hr style={{width: "50%", marginLeft: "25%"}}></hr>
          
         <BarChart />
         
@@ -263,10 +264,6 @@ function App() {
     
   );
 }
-const colo = {
-  padding : "10px"
-
-};
 const solo = {
   fontWeight:"bold",
   textAlign : "center",
