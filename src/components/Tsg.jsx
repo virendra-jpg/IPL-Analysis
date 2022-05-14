@@ -10,6 +10,7 @@ const Tsg = ({year}) => {
             
             
             {jsonData.map((user)=>{
+                
             
              if(user.season === year) {
                 return (
@@ -29,7 +30,10 @@ const Tsg = ({year}) => {
 
                                       
                 );
-            }})}
+            }
+        return
+    }
+            )}
 
 
         </div>
