@@ -10,11 +10,10 @@ const Tsg = ({year}) => {
             
             
             {jsonData.map((user)=>{
-                
             
              if(user.season === year) {
                 return (
-
+                    
                     <div key={user.id} style={{border:"1px solid green"}} className="card mb-3">
                         <h2 style={{backgroundColor:"#fff"}} className="card-header">{user.team1} vs {user.team2}</h2>
                         <div  className="card-body">
@@ -30,10 +29,11 @@ const Tsg = ({year}) => {
 
                                       
                 );
+                
+             }
+             return "";
+            })
             }
-        return
-    }
-            )}
 
 
         </div>
