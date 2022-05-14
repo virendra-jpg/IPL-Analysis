@@ -166,6 +166,7 @@ function App() {
         role="tabpanel"
         aria-labelledby="season-tab-8"
       >
+       <h1 style={solo}>Analysis of IPL Season 2008</h1> 
         <Tsg year={2008} />
       </div>
       <div
@@ -174,6 +175,7 @@ function App() {
         role="tabpanel"
         aria-labelledby="season-tab-9"
       >
+        <h1 style={solo}>Analysis of IPL Season 2009</h1> 
         <Tsg year={2009}  />
       </div>
       <div
@@ -182,6 +184,7 @@ function App() {
         role="tabpanel"
         aria-labelledby="season-tab-10"
       >
+        <h1 style={solo}>Analysis of IPL Season 2010</h1> 
         <Tsg year={2010}  />
       </div>
       <div
@@ -190,6 +193,7 @@ function App() {
         role="tabpanel"
         aria-labelledby="season-tab-11"
       >
+        <h1 style={solo}>Analysis of IPL Season 2011</h1> 
         <Tsg year={2011}  />
       </div>
       <div
@@ -198,6 +202,7 @@ function App() {
         role="tabpanel"
         aria-labelledby="season-tab-12"
       >
+        <h1 style={solo}>Analysis of IPL Season 2012</h1> 
         <Tsg year={2012}  />
       </div>
       <div
@@ -206,6 +211,7 @@ function App() {
         role="tabpanel"
         aria-labelledby="season-tab-13"
       >
+        <h1 style={solo}>Analysis of IPL Season 2013</h1> 
         <Tsg year={2013}  />
       </div>
       <div
@@ -214,6 +220,7 @@ function App() {
         role="tabpanel"
         aria-labelledby="season-tab-14"
       >
+        <h1 style={solo}>Analysis of IPL Season 2014</h1> 
         <Tsg year={2014}  />
       </div>
       <div
@@ -222,6 +229,7 @@ function App() {
         role="tabpanel"
         aria-labelledby="season-tab-15"
       >
+        <h1 style={solo}>Analysis of IPL Season 2015</h1> 
         <Tsg year={2015}  />
       </div>
       <div
@@ -230,6 +238,7 @@ function App() {
         role="tabpanel"
         aria-labelledby="season-tab-16"
       >
+        <h1 style={solo}>Analysis of IPL Season 2016</h1> 
         <Tsg year={2016}  />
       </div>
       <div
@@ -238,6 +247,7 @@ function App() {
         role="tabpanel"
         aria-labelledby="season-tab-17"
       >
+        <h1 style={solo}>Analysis of IPL Season 2017</h1> 
         <Tsg year={2017}  />
       </div>
 
@@ -246,17 +256,6 @@ function App() {
 
   </div>
 </div>
-
-      
-
-      
-      
-      
-      
-        
-    
-
-       
        
       </header>
     </div>
@@ -268,7 +267,11 @@ const solo = {
   fontWeight:"bold",
   textAlign : "center",
   padding : "5px",
-  border: "1px solid black",
-  backgroundColor : "lightgrey"
+  border: "1px solid blue",
+  backgroundColor : "lightgrey",
+  
 };
+
+
+
 export default App;
